@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><!--Inicio-->
+<head><!--zona de configuración de la pagina-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width-device-width">-->
+    <title>Encriptador</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</head><!--fin zona de configuración-->
+<body data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed><!--inicio página-->
+
+
+    <main class="container"><!--zona de interacción de la página-->
+
+        <div class="encriptar">
+
+
+            <img class="logo" alt="logo de alura" src="imagenes/Frame 6.png">
+
+            <div class="cuadro">
+                <div class="texto-dinamico"> ENCRIPTADOR DE TEXTO - YIMY</div>
+            </div>
+
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingresa el texto aquí"></textarea>
+
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button  class="btn-desencriptar" type="button"  onclick="desencriptar()">Desencriptar</button>
+                <button  class="copiar-texto" type="button" onclick="copiartexto()">Copiar</button>
+                <button  class="limpiar-texto" type="button" onclick="limpiartexto()">limpiar</button>
+
+            </div>
+        </div>
+
+        <div class="encriptado">
+            <img src="imagenes/muñeco.png" alt="" id="muñeco" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+
+    </main><!--fin de interacción de la página-->
+    <script src="encriptador.js"></script>
+</body><!--fin pagina-->
+</html><!--fin-->
