@@ -2,7 +2,7 @@ function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+    let muneco = document.getElementById("muneco");
     texto=texto.toLowerCase()
     let textoCifrado = texto
       .replace(/e/gi, "enter")
@@ -15,9 +15,9 @@ function encriptar() {
       document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
       parrafo.textContent = "";
-      muñeco.src = "imagenes/ok.jpg";
+      muneco.src = "imagenes/ok.jpg";
     } else {
-      muñeco.src = "imagenes/muñeco.png";
+      muneco.src = "imagenes/muneco.png";
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";
       parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
       swal("Ooops!", "Debes ingresar un texto", "warning");
@@ -28,7 +28,7 @@ function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+    let muneco = document.getElementById("muneco");
   
     let textoCifrado = texto
       .replace(/enter/gi, "e")
@@ -41,9 +41,9 @@ function encriptar() {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
-        muñeco.src = "imagenes/ok.jpg";
+        muneco.src = "imagenes/ok.jpg";
       } else {
-        muñeco.src = "imagenes/muñeco.png";
+        muneco.src = "imagenes/muneco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         swal("Ooops!", "Debes ingresar un texto", "warning");
@@ -58,7 +58,7 @@ function encriptar() {
         let tituloMensaje = document.getElementById("titulo-mensaje");
         let parrafo = document.getElementById("parrafo");
         texto.value=""
-        muñeco.src = "imagenes/muñeco.png";
+        muneco.src = "imagenes/muneco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         
